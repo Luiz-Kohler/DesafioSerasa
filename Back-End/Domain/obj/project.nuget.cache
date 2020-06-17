@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "C4oeISxrcGkdwY1M2/uBdKzR1eW1T679TWrTsOsYpUPo64FoQ9DEJ497O0EL61d+L/nFhl2cu6acqx6mBhKPMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luiz\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\Luiz\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}
