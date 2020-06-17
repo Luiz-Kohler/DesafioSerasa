@@ -15,7 +15,7 @@ namespace Domain.Validators
         public DebitValidator()
         {
             RuleFor(d => d.CompanyId)
-                   .GreaterThan(0).WithMessage("The Id of company must be greater than 0");
+                   .GreaterThan(0).WithMessage("The company Id is invalid");
         }
     }
 }

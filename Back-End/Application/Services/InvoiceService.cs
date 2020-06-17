@@ -27,6 +27,8 @@ namespace Application.Services
             if (!invoice.IsValid())
                 AddErrors(invoice.GetErrors());
 
+            HandlerErrors();
+
             var company = await _companyRepository.GetById(invoice.CompanyId);
 
             if (company == null)

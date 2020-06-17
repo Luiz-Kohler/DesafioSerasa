@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\Utils.csproj": {}
+    "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\Utils.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\Utils.csproj": {
+    "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\Utils.csproj",
+        "projectUniqueName": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\Utils.csproj",
+        "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\Utils.csproj",
         "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\obj\\",
+        "outputPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",

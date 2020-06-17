@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
-namespace DesafioSerasa.Controllers
+namespace Web.Controllers
 {
     [ApiController]
     [Route("companies")]

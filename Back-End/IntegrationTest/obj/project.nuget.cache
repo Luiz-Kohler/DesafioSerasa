@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9p9eGM2Av7DuuR5LGReSC+q7YOTx7pe0P7F3f6sMe33N5cBWEWWrP1wT4hWP6RxrhSQ9YIeGOBUVTRTJCOe6Cg==",
+  "dgSpecHash": "xfVoME8T79G+ZEMH8hXQOJil/X9pzQktVa9gBCW1pa8ado2m63yP3HsNCRJUFF0NRpuGd4eYDRkM0XcxEG3vPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\IntegrationTest\\IntegrationTest.csproj",
+  "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\IntegrationTest\\IntegrationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\3.1.5\\microsoft.aspnetcore.mvc.testing.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -35,7 +33,6 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\3.1.5\\microsoft.entityframeworkcore.proxies.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.5\\microsoft.entityframeworkcore.relational.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.5\\microsoft.entityframeworkcore.sqlserver.3.1.5.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.5\\microsoft.extensions.caching.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.5\\microsoft.extensions.caching.memory.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.5\\microsoft.extensions.configuration.3.1.5.nupkg.sha512",
@@ -63,14 +60,11 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.logging.eventsource\\3.1.5\\microsoft.extensions.logging.eventsource.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.options\\3.1.5\\microsoft.extensions.options.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.5\\microsoft.extensions.options.configurationextensions.3.1.5.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.1.0\\microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.net.http\\2.0.20710\\microsoft.net.http.2.0.20710.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.net.test.sdk\\16.4.0\\microsoft.net.test.sdk.16.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.4.0\\microsoft.testplatform.objectmodel.16.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.testplatform.testhost\\16.4.0\\microsoft.testplatform.testhost.16.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.3\\microsoft.visualstudio.web.codegeneration.3.1.3.nupkg.sha512",
@@ -93,11 +87,6 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\swashbuckle.aspnetcore\\5.4.1\\swashbuckle.aspnetcore.5.4.1.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.4.1\\swashbuckle.aspnetcore.swagger.5.4.1.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.4.1\\swashbuckle.aspnetcore.swaggergen.5.4.1.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.4.1\\swashbuckle.aspnetcore.swaggerui.5.4.1.nupkg.sha512",
-    "C:\\Users\\Luiz\\.nuget\\packages\\swashbuckle.core\\5.6.0\\swashbuckle.core.5.6.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
@@ -182,46 +171,5 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Client 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Core 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.Net.Http 2.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Swashbuckle.Core 5.6.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Swashbuckle.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

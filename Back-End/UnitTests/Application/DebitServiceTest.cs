@@ -33,7 +33,7 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldCreateDebit()
         {
-            var data = DateTime.UtcNow;
+
 
             var expectedDebit = new Debit(1);
             var debitRequest = new DebitRequestModel()
@@ -60,8 +60,6 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldReturnErrorAtCreateDebit()
         {
-            var data = DateTime.UtcNow;
-
             var debitRequest = new DebitRequestModel()
             {
                 CompanyId = -1,
@@ -82,8 +80,6 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldReturnErrorBecausseNotFoundCompanyAtCreateDebit()
         {
-            var data = DateTime.UtcNow;
-
             var debitRequest = new DebitRequestModel()
             {
                 CompanyId = 1,
@@ -100,7 +96,7 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldGetDebitById()
         {
-            var data = DateTime.UtcNow;
+
 
             var debit = new Debit(1);
 

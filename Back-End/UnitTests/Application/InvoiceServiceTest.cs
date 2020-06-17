@@ -8,7 +8,6 @@ using Domain.Interfaces;
 using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Utils.Exceptions;
@@ -34,7 +33,7 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldCreateInvoice()
         {
-            var data = DateTime.UtcNow;
+
 
             var expectedInvoice = new Invoice(1);
             var InvoiceRequest = new InvoiceRequestModel()
@@ -61,8 +60,6 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldReturnErrorAtCreateInvoice()
         {
-            var data = DateTime.UtcNow;
-
             var InvoiceRequest = new InvoiceRequestModel()
             {
                 CompanyId = -1,
@@ -73,7 +70,7 @@ namespace UnitTests.Application
             _companyRepository.GetById(1).Returns(company);
 
             var expectedErrors = new HashSet<string>();
-            expectedErrors.Add("The Invoice price must be greater than 0");
+            expectedErrors.Add("The company Id is invalid");
 
             var ex = await Record.ExceptionAsync(() => _invoiceService.Create(InvoiceRequest)) as BadRequestException;
 
@@ -83,8 +80,6 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldReturnErrorBecausseNotFoundCompanyAtCreateInvoice()
         {
-            var data = DateTime.UtcNow;
-
             var InvoiceRequest = new InvoiceRequestModel()
             {
                 CompanyId = 1,
@@ -101,7 +96,7 @@ namespace UnitTests.Application
         [Test]
         public async Task ShouldGetInvoiceById()
         {
-            var data = DateTime.UtcNow;
+
 
             var Invoice = new Invoice(1);
 
@@ -139,8 +134,6 @@ namespace UnitTests.Application
         [Test]
         public async Task GetCompanyInvoices()
         {
-            var date = DateTime.UtcNow;
-
             var InvoicesOfCompanyModels = new List<InvoiceResponseModel>();
             var InvoicesOfCompany = new List<Invoice>();
 

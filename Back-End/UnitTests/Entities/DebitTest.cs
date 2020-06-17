@@ -10,7 +10,7 @@ namespace UnitTests.Entities
         [Test]
         public void ShouldReturnInvalid()
         {
-            var debit = new Debit(1);
+            var debit = new Debit(-1);
 
             var expectedValue = false;
             var value = debit.IsValid();

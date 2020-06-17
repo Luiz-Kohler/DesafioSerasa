@@ -27,6 +27,8 @@ namespace Application.Services
             if (!debit.IsValid())
                 AddErrors(debit.GetErrors());
 
+            HandlerErrors();
+
             var company = await _companyRepository.GetById(debit.CompanyId);
 
             if (company == null)

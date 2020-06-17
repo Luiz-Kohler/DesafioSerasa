@@ -1,11 +1,11 @@
-﻿using DesafioSerasa;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NUnit.Framework;
 using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Web;
 using Xunit;
 
 namespace IntegrationTest.Controllers

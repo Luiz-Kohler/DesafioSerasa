@@ -72,31 +72,6 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Net.Http": "[2.0.20710, 2.1.0)",
-          "Newtonsoft.Json": "4.5.6"
-        },
-        "compile": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Net.Http.Formatting.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebApi.Core/4.0.20710": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "[4.0.20710, 4.1.0)"
-        },
-        "compile": {
-          "lib/net40/System.Web.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Http.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -548,15 +523,6 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
-        }
-      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.5": {
         "type": "package",
         "dependencies": {
@@ -678,19 +644,6 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "System.Reflection.TypeExtensions": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.Primitives/3.1.5": {
         "type": "package",
         "compile": {
@@ -717,15 +670,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.0.20710": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
         }
       },
       "Microsoft.NET.Test.Sdk/16.4.0": {
@@ -758,15 +702,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.OpenApi/1.1.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
       "Microsoft.TestPlatform.ObjectModel/16.4.0": {
@@ -1272,73 +1207,6 @@
             "assetType": "native",
             "rid": "win-x86"
           }
-        }
-      },
-      "Swashbuckle.AspNetCore/5.4.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
-          "Swashbuckle.AspNetCore.Swagger": "5.4.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "5.4.1",
-          "Swashbuckle.AspNetCore.SwaggerUI": "5.4.1"
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Swashbuckle.AspNetCore.Swagger/5.4.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.1.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.AspNetCore.SwaggerGen/5.4.1": {
-        "type": "package",
-        "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "5.4.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.AspNetCore.SwaggerUI/5.4.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.Core/5.6.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Core": "4.0.20710",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/net40/Swashbuckle.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Swashbuckle.Core.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -2668,27 +2536,6 @@
           "bin/placeholder/Application.dll": {}
         }
       },
-      "DesafioSerasa/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Application": "1.0.0",
-          "Infra": "1.0.0",
-          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
-          "Swashbuckle.AspNetCore": "5.4.1",
-          "Swashbuckle.Core": "5.6.0"
-        },
-        "compile": {
-          "bin/placeholder/DesafioSerasa.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DesafioSerasa.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2731,6 +2578,25 @@
         "runtime": {
           "bin/placeholder/Utils.dll": {}
         }
+      },
+      "Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Infra": "1.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
+          "Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2850,33 +2716,6 @@
         "lib/netstandard1.6/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.Client/4.0.20710": {
-      "sha512": "BwFtW0cGr8tg02XalvF8MmznOpYrhquD2eXWI0oF3LLSqLMFoFkb8Pmke/7SnqkiNc+YfsaUqdXEKbjhv1Ctrw==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.client/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Net.Http.Formatting.dll",
-        "lib/net40/System.Net.Http.Formatting.xml",
-        "microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.client.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebApi.Core/4.0.20710": {
-      "sha512": "ufD+tH4W7+eNsb4pzX5oFTDcgI6J3lffughFTkyLHPBZ+A4Eo+VncAxt3lbt9zxxbLHXIbgJHYRLvtgR5YEZAQ==",
-      "type": "package",
-      "path": "microsoft.aspnet.webapi.core/4.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/web.config.transform",
-        "lib/net40/System.Web.Http.dll",
-        "lib/net40/System.Web.Http.xml",
-        "microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
-        "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3424,33 +3263,6 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
-      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
-      "type": "package",
-      "path": "microsoft.extensions.apidescription.server/3.0.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Microsoft.Extensions.ApiDescription.Server.props",
-        "build/Microsoft.Extensions.ApiDescription.Server.targets",
-        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
-        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
-        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-        "microsoft.extensions.apidescription.server.nuspec",
-        "tools/Newtonsoft.Json.dll",
-        "tools/dotnet-getdocument.deps.json",
-        "tools/dotnet-getdocument.dll",
-        "tools/dotnet-getdocument.runtimeconfig.json",
-        "tools/net461-x86/GetDocument.Insider.exe",
-        "tools/net461-x86/GetDocument.Insider.exe.config",
-        "tools/net461/GetDocument.Insider.exe",
-        "tools/net461/GetDocument.Insider.exe.config",
-        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
-        "tools/netcoreapp2.1/GetDocument.Insider.dll",
-        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
-      ]
-    },
     "Microsoft.Extensions.Caching.Abstractions/3.1.5": {
       "sha512": "1HWdvlBNI4laVkx5oglv3Oaz5s8dO/dpkOep8FLv7+QAK2rm3ofBVv49aiDnijnwO+ZPJ/0iNctZWP0W2S07Rw==",
       "type": "package",
@@ -3611,21 +3423,6 @@
         "microsoft.extensions.options.nuspec"
       ]
     },
-    "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
-      "type": "package",
-      "path": "microsoft.extensions.platformabstractions/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.xml",
-        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.xml",
-        "microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
-        "microsoft.extensions.platformabstractions.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Primitives/3.1.5": {
       "sha512": "6bLdjSAQix82oP2tsuX9MM2yjgUFFOkSZYyRSKoUULilw2cg0Y0H+dnugwYlfj8Jd7yjd/+QSdNBqEyYhTYv0w==",
       "type": "package",
@@ -3682,22 +3479,6 @@
         "ref/xamarinmac20/Microsoft.Identity.Client.xml"
       ]
     },
-    "Microsoft.Net.Http/2.0.20710": {
-      "sha512": "OsB/5QO9tYJRLYIgBOhRl4Tssh3pw7+UAO9tMGMBg63f98GfjsniVIwLWRC0vcRr/F6HLP/NvRlHyGBhtD7Bmw==",
-      "type": "package",
-      "path": "microsoft.net.http/2.0.20710",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net45/_._",
-        "microsoft.net.http.2.0.20710.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    },
     "Microsoft.NET.Test.Sdk/16.4.0": {
       "sha512": "gjjqS3rCzg4DrSQq4YwJwUUvc49HtXpXrZkW9fu5VG+K4X+Ztn4+UzolyML7wPnl/EAIufk4hu628bJB4WtpFg==",
       "type": "package",
@@ -3748,23 +3529,6 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.OpenApi/1.1.4": {
-      "sha512": "6SW0tpbJslc8LAY1XniRfLVcJa7bJUbbwvo2/ZRqfkMbJrsqIj9045vg3STtZhDhYRKhpYgjqGU11eeW4Pzyrg==",
-      "type": "package",
-      "path": "microsoft.openapi/1.1.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Microsoft.OpenApi.dll",
-        "lib/net46/Microsoft.OpenApi.pdb",
-        "lib/net46/Microsoft.OpenApi.xml",
-        "lib/netstandard2.0/Microsoft.OpenApi.dll",
-        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
-        "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.1.4.nupkg.sha512",
-        "microsoft.openapi.nuspec"
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/16.4.0": {
@@ -4806,75 +4570,6 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Swashbuckle.AspNetCore/5.4.1": {
-      "sha512": "5EA++Cg8nzw1GCOM+7gWqrXJtylH8XMu+ixkFrbRIhRSMiZLzVPCFnSgAvJn+hCyi+AipUoJbBYv1BjvugieSw==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore/5.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.5.4.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.Swagger/5.4.1": {
-      "sha512": "EY9ILzyXCAdAOmbbBM1LCTGO/T/hcRv16GrmwHWLqcBTOzZQ1lX6hUG+0BDu0xt1ti6TWMTfqEGOojsGYE5rbg==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/5.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.5.4.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swagger.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerGen/5.4.1": {
-      "sha512": "HH98jkSlJX16xyt/GRzjYs9SHekQTxT6Orok29smdrQ9usBkO8B2dBlUBxCLuupsch8ol46Oq/Apx3wve0LJTg==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/5.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.5.4.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggergen.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerUI/5.4.1": {
-      "sha512": "YhRB2iqO/DILvWWxgzckPefxTwjJc9jPT1NjqEW/DPcYLP8CeR4/wII0h4mnV92pDcItPD5FVFT8yNotGmWViw==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/5.4.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "swashbuckle.aspnetcore.swaggerui.5.4.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggerui.nuspec"
-      ]
-    },
-    "Swashbuckle.Core/5.6.0": {
-      "sha512": "GhVWgtB8hCOxQhx7zLiiRyoi6flm7fNDDGILYHWktxLMkykRUz90fhmLRZECmnbvCcepFyROiw3phS1XorhdDg==",
-      "type": "package",
-      "path": "swashbuckle.core/5.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/Swashbuckle.Core.dll",
-        "swashbuckle.core.5.6.0.nupkg.sha512",
-        "swashbuckle.core.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -8778,11 +8473,6 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
-    "DesafioSerasa/1.0.0": {
-      "type": "project",
-      "path": "../DesafioSerasa/DesafioSerasa.csproj",
-      "msbuildProject": "../DesafioSerasa/DesafioSerasa.csproj"
-    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -8797,17 +8487,22 @@
       "type": "project",
       "path": "../Utils/Utils.csproj",
       "msbuildProject": "../Utils/Utils.csproj"
+    },
+    "Web/1.0.0": {
+      "type": "project",
+      "path": "../Web/Web.csproj",
+      "msbuildProject": "../Web/Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Application >= 1.0.0",
-      "DesafioSerasa >= 1.0.0",
       "Domain >= 1.0.0",
       "FluentAssertions >= 5.10.3",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NSubstitute >= 4.2.2",
       "NUnit3TestAdapter >= 3.15.1",
+      "Web >= 1.0.0",
       "nunit >= 3.12.0",
       "xunit.extensibility.core >= 2.4.1"
     ]
@@ -8818,11 +8513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8838,14 +8533,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Application\\Application.csproj"
+            "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Application\\Application.csproj"
             },
-            "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\DesafioSerasa\\DesafioSerasa.csproj": {
-              "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\DesafioSerasa\\DesafioSerasa.csproj"
+            "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain\\Domain.csproj"
+            "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Web\\Web.csproj": {
+              "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Web\\Web.csproj"
             }
           }
         }
@@ -8905,47 +8600,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Client 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Core 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.Net.Http 2.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Swashbuckle.Core 5.6.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Swashbuckle.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

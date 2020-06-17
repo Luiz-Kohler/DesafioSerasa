@@ -1,7 +1,6 @@
 ﻿using Application.IServices;
 using Application.Models.RequestModel;
 using Application.Models.ResponseModel;
-using DesafioSerasa.Controllers;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
@@ -11,6 +10,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Utils.Exceptions;
+using Web.Controllers;
 
 namespace UnitTests.Controller
 {

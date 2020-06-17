@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using Utils.Exceptions;
 
-namespace DesafioSerasa.Controllers
+namespace Web.Controllers
 {
     public abstract class AbstractApiController : ControllerBase
     {
@@ -23,5 +23,4 @@ namespace DesafioSerasa.Controllers
             return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
     }
-
 }

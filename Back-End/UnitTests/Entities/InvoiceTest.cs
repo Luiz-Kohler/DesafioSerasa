@@ -10,7 +10,7 @@ namespace UnitTests.Entities
         [Test]
         public void ShouldReturnInvalid()
         {
-            var invoice = new Invoice(1);
+            var invoice = new Invoice(-1);
 
             var expectedValue = false;
             var value = invoice.IsValid();

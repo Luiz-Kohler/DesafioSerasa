@@ -7127,11 +7127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Infra\\Infra.csproj",
+      "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Infra\\Infra.csproj",
       "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Infra\\obj\\",
+      "outputPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7147,8 +7147,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain\\Domain.csproj"
+            "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Domain\\Domain.csproj"
             }
           }
         }

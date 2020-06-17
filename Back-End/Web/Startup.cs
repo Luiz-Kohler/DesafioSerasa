@@ -9,9 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.PlatformAbstractions;
-using System.IO;
-namespace DesafioSerasa
+
+namespace Web
 {
     public class Startup
     {
@@ -56,41 +55,10 @@ namespace DesafioSerasa
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json",
-                    "Conversor de Temperaturas");
-            });
         }
 
         private void AddDbContextCollection(IServiceCollection services)
         {
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1",
-                    new Microsoft.OpenApi.Models.OpenApiInfo
-                    {
-                        Title = "Conversor de Temperaturas",
-                        Version = "v1",
-                        Description = "Exemplo de API REST criada com o ASP.NET Core",
-                        Contact = new Microsoft.OpenApi.Models.OpenApiContact
-                        {
-                            Name = "Renato Groffe",
-                            Url = new System.Uri("https://github.com/renatogroffe")
-                        }
-                    });
-
-                string caminhoAplicacao =
-                    PlatformServices.Default.Application.ApplicationBasePath;
-                string nomeAplicacao =
-                    PlatformServices.Default.Application.ApplicationName;
-                string caminhoXmlDoc =
-                    Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
-
-                c.IncludeXmlComments(caminhoXmlDoc);
-            });
-
             services.AddScoped<ICompanyRepository, CompanyRepository>();
             services.AddScoped<IInvoiceRepository, InvoiceRepository>();
             services.AddScoped<IDebitRepository, DebitRepository>();
@@ -104,4 +72,3 @@ namespace DesafioSerasa
         }
     }
 }
-

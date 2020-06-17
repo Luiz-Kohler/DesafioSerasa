@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UquortBx1yJGIwhwHC0+nrm5tqkxtIcxtflWTNYBuJUBYUBPqo2Hw5J+WhDWSAvbD5/fU0T/P5nivBqKcMZ4xA==",
+  "dgSpecHash": "Fm6D6sMGobYVTdeRhtjgcS7p4a7zbsF7ZQkiH3JKir5tD15rrzk5FWk4zcv1d9YSNctEzhwLuG1Gvasd8ZtfAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Infra\\Infra.csproj",
+  "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Infra\\Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",

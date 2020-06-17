@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Application", "Application.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DesafioSerasa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\DesafioSerasa", "DesafioSerasa.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Domain", "Domain.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Infra", "Infra.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils", "Utils.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Application", "Application.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Domain", "Domain.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Infra", "Infra.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils", "Utils.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Web", "Web.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegrationTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

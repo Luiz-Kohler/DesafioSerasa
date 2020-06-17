@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VxV/oQRPJ8zHJZ/svhTYdxoKKZPOieT/pnsIoMkq1NIBa1GVM4J4NgsMCptd1YRigx+Z4G+D7Q+ryG1PXhoGjg==",
+  "dgSpecHash": "MrHAGRZwqWPcu8CQg/Ab25Jt4GOIAjMlREzzdZfivuxnyoD/ChGrTfxcZKQkNRCIV8wP01CYmhb8wCZ44c0EoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luiz\\Downloads\\DesafioSerasa\\Web\\Utils\\Utils.csproj",
+  "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Utils\\Utils.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
