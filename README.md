@@ -1,3 +1,6 @@
+## Data de inicio: 15/06/2020
+## Data de finalização : 18/06/2020
+
 # DesafioSerasa
 Este Repositório é a segunda etapa do processo seletivo para o **Programa de formação de novos desenvolvedores** da **Serasa** com parceria da **Proway**.
 
