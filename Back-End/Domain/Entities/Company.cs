@@ -46,9 +46,7 @@ namespace Domain.Entities
         {
             for (int i = 0; i < Invoices.Count; i++)
             {
-                var valueToAdd = Reliability * 0.02;
-                var reliability = Reliability + valueToAdd;
-                Reliability = (int)Math.Floor(reliability);
+                Reliability = (int)Math.Floor(Reliability + (Reliability * 0.02));
             }
         }
 
@@ -56,9 +54,8 @@ namespace Domain.Entities
         {
             for (int i = 0; i < Debits.Count; i++)
             {
-                var valueToRemove = Reliability * 0.04;
-                var reliability = Reliability - valueToRemove;
-                Reliability = (int)Math.Ceiling(reliability);
+                Reliability = (int)Math.Ceiling(Reliability - (Reliability * 0.04));
+
             }
         }
 
