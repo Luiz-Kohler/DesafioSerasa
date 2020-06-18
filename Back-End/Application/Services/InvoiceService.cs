@@ -37,11 +37,25 @@ namespace Application.Services
             HandlerErrors();
 
             await _invoiceRepository.Create(invoice);
-            await _invoiceRepository.Save();
 
             company.CalculateReliability();
 
+            await _invoiceRepository.Save();
+
             return InvoiceMap.InvoiceToInvoiceResponse(invoice);
+        }
+
+        public async Task<bool> CreateAmountInvoice(int amount, InvoiceRequestModel invoiceRequest)
+        {
+            var sucess = false;
+
+            for (int i = 0; i < amount; i++)
+            {
+                await Create(invoiceRequest);
+            }
+
+            sucess = true;
+            return sucess;
         }
 
         public async Task<InvoiceResponseModel> GetById(int id)

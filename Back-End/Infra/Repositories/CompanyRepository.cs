@@ -21,14 +21,9 @@ namespace Infra.Repositories
             return await _dbSet.AnyAsync(x => x.Name == companyName);
         }
 
-        public async Task<List<Company>> GetOrderByCrescent(int currentPage = 0)
+        public async Task<List<Company>> GetOrderByDescending()
         {
-            return await _dbSet.OrderBy(x => x.Reliability).Skip((currentPage - 1) * currentPage).Take(20).ToListAsync();
-        }
-
-        public async Task<List<Company>> GetOrderByDescending(int currentPage = 0)
-        {
-            return await _dbSet.OrderByDescending(x => x.Reliability).Skip((currentPage - 1) * currentPage).Take(20).ToListAsync();
+            return await _dbSet.OrderByDescending(x => x.Reliability).ToListAsync();
         }
     }
 }

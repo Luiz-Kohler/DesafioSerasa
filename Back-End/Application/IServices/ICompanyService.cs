@@ -7,8 +7,7 @@ namespace Application.IServices
 {
     public interface ICompanyService
     {
-        Task<List<CompanyResponseModel>> GetOrderByDescending(int currentPage = 0);
-        Task<List<CompanyResponseModel>> GetOrderByCrescent(int currentPage = 0);
+        Task<List<CompanyResponseModel>> GetOrderByDescending();
         Task<CompanyResponseModel> GetById(int id);
         Task<CompanyResponseModel> Create(CompanyRequestModel companyRequest);
     }

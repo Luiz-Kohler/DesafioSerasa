@@ -16,7 +16,8 @@ namespace Domain.Entities
 
         public Company()
         {
-
+            this.Invoices = new List<Invoice>();
+            this.Debits = new List<Debit>();
         }
 
         public Company(string name)
@@ -29,6 +30,8 @@ namespace Domain.Entities
 
         public void CalculateReliability()
         {
+            Reliability = 50;
+
             CalculateInvoices();
             CalculateDebits();
 

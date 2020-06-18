@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FmbdAcZ6QpXmF4muiCkQwYxvwGTYVL8j/R5/SWxr/FwaC5j9dTX6JS8TVMvEQQMaMF4X8lI3Lv92dGvJlGw1mw==",
+  "dgSpecHash": "XQq48xmoa92dmLs483dLKPp7he4IQiLTnCpPAvzxUhwtl5msIpcF1dXRIZmNhHG4mABdJfcfI/sibXohzS/faA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\Web\\Web.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.5\\microsoft.aspnetcore.http.features.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -108,6 +109,7 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Luiz\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

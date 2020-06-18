@@ -20,9 +20,9 @@ C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\bin\Debug\netcorea
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\bin\Debug\netcoreapp3.1\Utils.pdb
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
-C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.dll
 C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Luiz\source\repos\DesafioSerasa\Back-End\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache

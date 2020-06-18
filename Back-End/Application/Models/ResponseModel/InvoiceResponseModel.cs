@@ -3,6 +3,6 @@
     public class InvoiceResponseModel
     {
         public int Id { get; private set; }
-        public virtual CompanyResponseModel Company { get; private set; }
+        public int CompanyId { get; private set; }
     }
 }

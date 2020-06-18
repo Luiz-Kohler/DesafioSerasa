@@ -3,7 +3,6 @@ using Domain.Interfaces;
 using Infra.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Infra.Repositories.GenericRepository
@@ -32,9 +31,9 @@ namespace Infra.Repositories.GenericRepository
 
         public async Task Save() => await _dbContext.SaveChangesAsync();
 
-        public async Task<ICollection<TEntity>> GetAll(int currentPage = 0)
+        public async Task<ICollection<TEntity>> GetAll()
         {
-            return await _dbSet.Skip((currentPage - 1) * currentPage).Take(20).ToListAsync();
+            return await _dbSet.ToListAsync();
         }
     }
 }

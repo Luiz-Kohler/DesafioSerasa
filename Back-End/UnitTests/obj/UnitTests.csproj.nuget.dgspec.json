@@ -48,6 +48,10 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[15.0.5, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

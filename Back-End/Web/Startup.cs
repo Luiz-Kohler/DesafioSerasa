@@ -23,13 +23,21 @@ namespace Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader()
+                       .Build();
+            }));
             AddDbContextCollection(services);
             services.AddControllers();
-            services.AddCors();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -47,6 +55,14 @@ namespace Web
                 }
             }
 
+            app.UseCors("MyPolicy");
+
+            app.Use((context, next) =>
+            {
+                context.Items["__CorsMiddlewareInvoked"] = true;
+                return next();
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -54,7 +70,6 @@ namespace Web
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
         }
 
         private void AddDbContextCollection(IServiceCollection services)
@@ -66,6 +81,8 @@ namespace Web
             services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<IInvoiceService, InvoiceService>();
             services.AddScoped<IDebitService, DebitService>();
+
+            services.AddRouting(r => r.SuppressCheckForUnhandledSecurityMetadata = true);
 
             services.AddDbContext<MainContext>(opt => opt
                 .UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

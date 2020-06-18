@@ -1,7 +1,6 @@
 ﻿using Application.AutoMap;
 using Application.IServices;
 using Application.Models.RequestModel;
-using Application.Models.ResponseModel;
 using Application.Services;
 using Domain.Entities;
 using Domain.Interfaces;
@@ -24,6 +23,7 @@ namespace UnitTests.Application
         {
             _repository = Substitute.For<ICompanyRepository>();
             _service = Substitute.For<ICompanyService>();
+
             _service = new CompanyService(_repository);
         }
 

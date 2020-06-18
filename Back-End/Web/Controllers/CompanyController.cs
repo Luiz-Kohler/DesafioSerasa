@@ -1,20 +1,28 @@
-﻿using Application.IServices;
+﻿using Application.CSV;
+using Application.IServices;
 using Application.Models.RequestModel;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace Web.Controllers
 {
     [ApiController]
     [Route("companies")]
+    [EnableCors("MyPolicy")]
     public class CompanyController : AbstractApiController
     {
         private readonly ICompanyService _companyService;
+        private readonly IDebitService _debitService;
+        private readonly IInvoiceService _invoiceService;
 
-        public CompanyController(ICompanyService service)
+        public CompanyController(ICompanyService companyService, IDebitService debitService, IInvoiceService invoiceService)
         {
-            _companyService = service;
+            _companyService = companyService;
+            _debitService = debitService;
+            _invoiceService = invoiceService;
         }
 
         [HttpPost]
@@ -29,6 +37,40 @@ namespace Web.Controllers
             {
                 return HandleControllerErrors(ex);
             }
+        }
+
+        [HttpPost]
+        [Route("{id}")]
+        public async Task<IActionResult> CreateCategoriesAndDebits([FromRoute] int id)
+        {
+            try
+            {
+                var responseCsv = CSVParserService.ReadCsvFileReturnDebit_Invoice_Amount(Request.Form.Files[0]);
+
+                var debit = new DebitRequestModel()
+                {
+                    CompanyId = id
+                };
+
+                var invoice = new InvoiceRequestModel()
+                {
+                    CompanyId = id
+                };
+
+                using (var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+                {
+                    await _invoiceService.CreateAmountInvoice(responseCsv.AmountInvoices, invoice);
+                    await _debitService.CreateAmountDebits(responseCsv.AmountDebits, debit);
+                    scope.Complete();
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return HandleControllerErrors(ex);
+            }
+
         }
 
         [HttpGet]
@@ -47,27 +89,12 @@ namespace Web.Controllers
         }
 
         [HttpGet]
-        [Route("GetOrderByDescending/{currentPage}")]
+        [Route("get-order-by-descending")]
         public async Task<IActionResult> GetOrderByDescending([FromRoute] int currentPage)
         {
             try
             {
-                var response = await _companyService.GetOrderByDescending(currentPage);
-                return Ok(response);
-            }
-            catch (Exception ex)
-            {
-                return HandleControllerErrors(ex);
-            }
-        }
-
-        [HttpGet]
-        [Route("OrderByCrescent/{currentPage}")]
-        public async Task<IActionResult> GetOrderByCrescent([FromRoute] int currentPage)
-        {
-            try
-            {
-                var response = await _companyService.GetOrderByCrescent(currentPage);
+                var response = await _companyService.GetOrderByDescending();
                 return Ok(response);
             }
             catch (Exception ex)

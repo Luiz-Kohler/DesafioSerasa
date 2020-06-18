@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Utils.Exceptions;
 
 namespace Web.Controllers
 {
+    [EnableCors("MyPolicy")]
     public abstract class AbstractApiController : ControllerBase
     {
         protected IActionResult HandleControllerErrors(Exception ex)

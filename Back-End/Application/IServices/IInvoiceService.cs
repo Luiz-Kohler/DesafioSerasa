@@ -9,6 +9,7 @@ namespace Application.IServices
     {
         Task<InvoiceResponseModel> GetById(int id);
         Task<InvoiceResponseModel> Create(InvoiceRequestModel invoiceRequest);
+        Task<bool> CreateAmountInvoice(int amount, InvoiceRequestModel invoiceRequest);
         Task<List<InvoiceResponseModel>> GetCompanyInvoices(int companyId);
     }
 }

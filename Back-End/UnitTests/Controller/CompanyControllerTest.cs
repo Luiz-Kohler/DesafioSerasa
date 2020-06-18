@@ -17,12 +17,18 @@ namespace UnitTests.Controller
     public class CompanyControllerTest
     {
         private readonly ICompanyService _companyService;
+        private readonly IDebitService _debitService;
+        private readonly IInvoiceService _invoiceService;
+
         private readonly CompanyController _controller;
 
         public CompanyControllerTest()
         {
             _companyService = Substitute.For<ICompanyService>();
-            _controller = new CompanyController(_companyService);
+            _debitService = Substitute.For<IDebitService>();
+            _invoiceService = Substitute.For<IInvoiceService>();
+
+            _controller = new CompanyController(_companyService, _debitService, _invoiceService);
         }
 
         [Test]
@@ -123,40 +129,10 @@ namespace UnitTests.Controller
             expectedCompanies.Add(goodCompany);
             expectedCompanies.Add(niceCompany);
 
-            _companyService.GetOrderByDescending(1).Returns(expectedCompanies);
+            _companyService.GetOrderByDescending().Returns(expectedCompanies);
 
             var responseController = await _controller.GetOrderByDescending(1) as OkObjectResult;
             var responseCompanies = responseController.Value as List<CompanyResponseModel>;
-
-            await _companyService.Received(1)
-                .GetOrderByDescending(Arg.Is<int>
-                (x => x == 1));
-
-            Assert.AreEqual((int)HttpStatusCode.OK, responseController.StatusCode);
-            expectedCompanies.Should().BeEquivalentTo(responseCompanies);
-        }
-
-        [Test]
-        public async Task ShouldGetOrderByCrescent()
-        {
-            var expectedCompanies = new List<CompanyResponseModel>();
-
-            var badCompany = new CompanyResponseModel(1, "AAA", 20);
-            var goodCompany = new CompanyResponseModel(2, "BBB", 50);
-            var niceCompany = new CompanyResponseModel(3, "CCC", 50);
-
-            expectedCompanies.Add(badCompany);
-            expectedCompanies.Add(goodCompany);
-            expectedCompanies.Add(niceCompany);
-
-            _companyService.GetOrderByCrescent(1).Returns(expectedCompanies);
-
-            var responseController = await _controller.GetOrderByCrescent(1) as OkObjectResult;
-            var responseCompanies = responseController.Value as List<CompanyResponseModel>;
-
-            await _companyService.Received(1)
-                .GetOrderByCrescent(Arg.Is<int>
-                (x => x == 1));
 
             Assert.AreEqual((int)HttpStatusCode.OK, responseController.StatusCode);
             expectedCompanies.Should().BeEquivalentTo(responseCompanies);

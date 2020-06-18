@@ -1,19 +1,19 @@
 ﻿using Application.CSV.Class;
 using Application.CSV.Mapper;
 using CsvHelper;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.IO;
-using System.Text;
 
 namespace Application.CSV
 {
-    public class CSVParserService
+    public static class CSVParserService
     {
-        public Debit_Invoice_Amount ReadCsvFileReturnDebit_Invoice_Amount(string path)
+        private static Debit_Invoice_Amount Get_Debit_Invoice_Amount(MemoryStream stream)
         {
             try
             {
-                using (var reader = new StreamReader(path, Encoding.Default))
+                using (var reader = new StreamReader(stream))
                 using (var csv = new CsvReader(reader, System.Globalization.CultureInfo.CreateSpecificCulture("pt-br")))
                 {
                     csv.Configuration.RegisterClassMap<Debit_Invoice_AmountMap>();
@@ -27,5 +27,17 @@ namespace Application.CSV
                 throw new Exception("Formatação incorreta do arquivo .csv");
             }
         }
+
+        public static Debit_Invoice_Amount ReadCsvFileReturnDebit_Invoice_Amount(IFormFile file)
+        {
+            using (var target = new MemoryStream())
+            {
+                file.CopyTo(target);
+                target.Seek(0, SeekOrigin.Begin);
+                return Get_Debit_Invoice_Amount(target);
+            }
+        }
     }
+
 }
+

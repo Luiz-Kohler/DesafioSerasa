@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xfVoME8T79G+ZEMH8hXQOJil/X9pzQktVa9gBCW1pa8ado2m63yP3HsNCRJUFF0NRpuGd4eYDRkM0XcxEG3vPQ==",
+  "dgSpecHash": "gthKcPr50zDlKx9yNx03Bog+n3q3711LQKO4d0XH2PXMo4vglIUnK2Gnkctg2afhNlsYZgxtsUgUNFrWF2VF4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Luiz\\source\\repos\\DesafioSerasa\\Back-End\\IntegrationTest\\IntegrationTest.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Luiz\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.5\\microsoft.aspnetcore.http.features.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\3.1.5\\microsoft.aspnetcore.mvc.testing.3.1.5.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Luiz\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

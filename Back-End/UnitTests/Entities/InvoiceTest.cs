@@ -24,7 +24,7 @@ namespace UnitTests.Entities
             var invoice = new Invoice(-1);
 
             var expectedErrors = new HashSet<string>();
-            expectedErrors.Add("The Id of company must be greater than 0");
+            expectedErrors.Add("The company Id is invalid");
 
             var errors = invoice.GetErrors();
 

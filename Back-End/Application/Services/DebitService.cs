@@ -37,11 +37,25 @@ namespace Application.Services
             HandlerErrors();
 
             await _debitRepository.Create(debit);
-            await _debitRepository.Save();
 
             company.CalculateReliability();
 
+            await _debitRepository.Save();
+
             return DebitMap.DebitToDebitResponse(debit);
+        }
+
+        public async Task<bool> CreateAmountDebits(int amount, DebitRequestModel debitRequest)
+        {
+            var sucess = false;
+
+            for (int i = 0; i < amount; i++)
+            {
+                await Create(debitRequest);
+            }
+
+            sucess = true;
+            return sucess;
         }
 
         public async Task<DebitResponseModel> GetById(int id)

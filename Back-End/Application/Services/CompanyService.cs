@@ -54,15 +54,9 @@ namespace Application.Services
             return CompanyMap.CompanyToCompanyResponse(company);
         }
 
-        public async Task<List<CompanyResponseModel>> GetOrderByCrescent(int currentPage = 0)
+        public async Task<List<CompanyResponseModel>> GetOrderByDescending()
         {
-            var companies = await _companyRepository.GetOrderByCrescent(currentPage);
-            return companies.Select(x => CompanyMap.CompanyToCompanyResponse(x)).ToList();
-        }
-
-        public async Task<List<CompanyResponseModel>> GetOrderByDescending(int currentPage = 0)
-        {
-            var companies = await _companyRepository.GetOrderByDescending(currentPage);
+            var companies = await _companyRepository.GetOrderByDescending();
             return companies.Select(x => CompanyMap.CompanyToCompanyResponse(x)).ToList();
         }
     }

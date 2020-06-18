@@ -17,10 +17,10 @@ namespace Application.AutoMap
         {
             var companyModel = AutoMapperFunc.ChangeValues<Company, CompanyResponseModel>(company);
 
-            var debits = company.Debits.Select(x => DebitMap.DebitToDebitResponse(x)).ToList();
+            var debits = company.Debits?.Select(x => DebitMap.DebitToDebitResponse(x)).ToList();
             companyModel.SetDebits(debits);
 
-            var invoices = company.Invoices.Select(x => InvoiceMap.InvoiceToInvoiceResponse(x)).ToList();
+            var invoices = company.Invoices?.Select(x => InvoiceMap.InvoiceToInvoiceResponse(x)).ToList();
             companyModel.SetInvoices(invoices);
 
             return companyModel;

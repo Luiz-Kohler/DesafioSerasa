@@ -16,7 +16,6 @@ namespace Infra.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(MainContext).Assembly);
-            modelBuilder.Seed();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
