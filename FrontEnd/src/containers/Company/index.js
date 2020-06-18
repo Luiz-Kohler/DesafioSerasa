@@ -26,6 +26,15 @@ function Companies(props) {
     fetchData();
   }, [modalImport]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await api.getCompanies();
+      setData(result);
+    };
+
+    fetchData();
+  }, [showModalCreate]);
+
   return (
     <Container className="mt-10">
       <Row>
