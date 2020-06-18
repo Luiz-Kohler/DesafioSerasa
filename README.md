@@ -12,7 +12,7 @@ O sistema se consiste em uma Api Rest se conectando com um banco SQL Server. Con
 - #### **Banco de dados**
   - SQL Server
   
-  -	#### **Backend**
+- #### **Backend**
     -	C#
     -Asp.Net Core
     -	AutoMapper
@@ -23,10 +23,10 @@ O sistema se consiste em uma Api Rest se conectando com um banco SQL Server. Con
     -	React Bootstrap
 
 -	#### **Testes**
-  -	Nunit
-  -	Fluent Assertions
-  -	NSubstitute
-  -	EntityFrameWorkCore.InMemory
+    -	Nunit
+    -	Fluent Assertions
+    -	NSubstitute
+    -	EntityFrameWorkCore.InMemory
   
   ### Necessidades para executar o sistema:
   
