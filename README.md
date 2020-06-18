@@ -1,7 +1,7 @@
 # DesafioSerasa
-Este Repositório é a segunda etapa do processo seletivo para o ‘Programa de formação de novos desenvolvedores’ da Serasa com parceria da Proway.
+Este Repositório é a segunda etapa do processo seletivo para o **Programa de formação de novos desenvolvedores** da **Serasa** com parceria da **Proway**.
 
-### Descrição do sistema
+## Descrição do sistema
 O sistema é um controle de diversas companhias e criar uma classificação das empresas da mais confiáveis para as demais, cada companhia contem um nome que é único, também suas notas fiscais emitidas e débitos, podendo importar arquivos **.csv** para calcular a confiabilidade.
 
 ### Informações Técnincas do sistema
@@ -9,20 +9,20 @@ O sistema se consiste em uma Api Rest se conectando com um banco SQL Server. Con
 
 ###  Tecnologias usadas
 
-- **Banco de dados**
+- #### **Banco de dados**
   - SQL Server
   
--	**Backend**
-  -	C#
-  -Asp.Net Core
-  -	AutoMapper
-  - Entity Framework Core
+  -	#### **Backend**
+    -	C#
+    -Asp.Net Core
+    -	AutoMapper
+    - Entity Framework Core
 
--	**Front-End**
-  -	React.js
-  -	React Bootstrap
+-	#### **Front-End**
+    -	React.js
+    -	React Bootstrap
 
--	**Testes**
+-	#### **Testes**
   -	Nunit
   -	Fluent Assertions
   -	NSubstitute
