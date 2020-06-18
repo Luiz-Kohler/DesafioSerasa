@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import CompanyService from "../../services/CompanyService";
-import { Row,Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const api = new CompanyService();
 
 function FormImport(props) {
-  const [formSubmitted,setFormSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   if (formSubmitted)
     return (
       <>
-      <Row>
-      <Col>
-        <p className="text-center">Importação realizada com sucesso.</p>
-         
-      </Col>
-      </Row>
-      <Row>
-      <Col>
-      <button type="submit" className="btn btn-primary float-right" onClick={() => props.handleClose()}>
+        <Row>
+          <Col>
+            <p className="text-center">Importação realizada com sucesso.</p>
+
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <button type="submit" className="btn btn-primary float-right" onClick={() => props.handleClose()}>
               Ok!
             </button>
-            </Col>      
+          </Col>
         </Row>
-        </>
-      );
+      </>
+    );
 
   return (
     <Formik

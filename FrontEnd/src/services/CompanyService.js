@@ -12,7 +12,7 @@ export default class CompanyService {
     const data = new FormData();
     const imagedata = values.file;
     data.append('inputname', imagedata);
-    fetch(config.endpoint + "/companies/"+values.idCompany, {
+    fetch(config.endpoint + "/companies/" + values.idCompany, {
       method: "POST",
       body: data
     })
@@ -26,7 +26,7 @@ export default class CompanyService {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...values })
-  }).then(response => response.json())
+    }).then(response => response.json())
       .then(success => console.log(success))
       .catch(error => console.log(error));
   }

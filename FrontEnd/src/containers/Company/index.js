@@ -1,7 +1,7 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import TableGeneric from "../../components/TableGeneric";
 import ModalGeneric from "../../components/ModalGeneric";
-import { Container, Row, Col,Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import FormImport from "./FormImport";
 import FormCreateCompany from "./FormCreateCompany";
 import CompanyService from "../../services/CompanyService";
@@ -22,7 +22,7 @@ function Companies(props) {
       const result = await api.getCompanies();
       setData(result);
     };
- 
+
     fetchData();
   }, [modalImport]);
 
@@ -30,7 +30,7 @@ function Companies(props) {
     <Container className="mt-10">
       <Row>
         <Col>
-          <h1>Empresas
+          <h1>Companhias
           <Button variant="success" className="float-right" onClick={() => setShowModalCreate(true)}>Criar</Button>
           </h1>
         </Col>
@@ -39,7 +39,7 @@ function Companies(props) {
         actions={[
           {
             name: "Importação",
-              event: id => setModalImport({ idCompany: id, showModal: true })
+            event: id => setModalImport({ idCompany: id, showModal: true })
           }
         ]}
         data={data}
