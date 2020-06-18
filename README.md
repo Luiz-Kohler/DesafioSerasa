@@ -14,7 +14,7 @@ O sistema se consiste em uma Api Rest se conectando com um banco SQL Server. Con
   
 - #### **Backend**
     -	C#
-    -Asp.Net Core
+    - Asp.Net Core
     -	AutoMapper
     - Entity Framework Core
 
