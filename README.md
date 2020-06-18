@@ -34,6 +34,6 @@ O sistema se consiste em uma Api Rest se conectando com um banco SQL Server. Con
 - Yarn
 - Visual Studio
 
-# Como o sistema funciona esta em um ComoFunciona.pdf mais a tabela que eu usei no exemplo
+## Como o sistema funciona esta em um ComoFunciona.pdf mais a tabela que eu usei no exemplo
 
-# Email para contato: luizfelipekohler03@gmail.com
+**Email para contato:** luizfelipekohler03@gmail.com
